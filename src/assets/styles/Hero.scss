@@ -1,0 +1,57 @@
+#hero{
+background: url("../img/hero-img.png")  no-repeat center/cover;
+min-height: 83vh;
+
+
+
+}
+.bookstr{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-radius: 5px;
+
+    select{
+        width: 200px;
+        height: 30px;
+        font-size: 20px ;
+        border: 2px solid #010049;
+        color: #010049;
+      
+       
+        background: none;
+
+    }
+
+  
+    }
+    
+.books{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+padding: 50px 0;
+gap: 20px;
+&--card{
+    &__book{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+&--btn{
+    button{
+        padding: 12px  30px;
+     background: none;
+     border: 2px solid #010049;
+     border-radius: 20px;
+     color: #010049;
+     margin-top: 30px 0;
+        
+
+    }
+}
+}

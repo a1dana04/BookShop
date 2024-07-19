@@ -1,0 +1,69 @@
+#basket {
+  padding: 30px;
+//  h1{
+//   font-size: 20px;
+//  }
+
+  img{
+    border-radius: 12px;
+  }
+  .basket {
+    overflow: scroll;
+    width: 400px;
+    height: 400px;
+
+
+
+   
+    &--card {
+      display: flex;
+      align-items: flex-start;
+      gap: 25px;
+      margin-bottom: 20px;
+      &__text {
+        h3{
+           margin: 10px 0;
+        }
+       
+        h4 {
+            cursor: pointer;
+          button {
+            width: 30px;
+            height: 25px;
+            top: 154px;
+            left: 232px;
+            gap: 0px;
+            border-radius: 3px 0px 0px 0px;
+            opacity: 0px;
+          }
+        }
+        &--click {
+          padding: 20px 0;
+          button {
+            width: 26px;
+            height: 19px;
+            top: 120px;
+            left: 224px;
+            gap: 0px;
+            opacity: 0px;
+            top: 114px;
+            left: 232px;
+            gap: 0px;
+            opacity: 0px;
+
+            color: white;
+            top: 119px;
+            left: 160px;
+            gap: 0px;
+            border: 1px 0px 0px 0px;
+            opacity: 0px;
+
+            background: #010049;
+          }
+          display: flex;
+          gap: 15px;
+        }
+      }
+    }
+  }
+}

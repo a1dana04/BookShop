@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import './App.scss'
+import Header from './components/Header/Header';
+import Hero from './components/Hero/Hero';
+import Basket from './components/Basket/Basket'
+import Admin from './components/Admin/Admin';
+import AddProduct from './components/AddProduct';
+import Footer from './components/Footer/Footer';
+import BookDetails from './components/BookDetails/BookDetails';
+import Search from './components/Serach/Search';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      {/* <Hero/> */}
+     <main style={{
+      minHeight: '100vh'
+     }}>
+     <Routes>
+       <Route path='/' element = {<Hero/>}/>
+       <Route path='/basket' element = {<Basket/>}/>
+       <Route path='/addProduct' element = {<AddProduct/>}/>
+       <Route path='/bookDetails/:bookId' element = {<BookDetails/>}/>
+       <Route path='/search/:searchId' element = {<Search/>}/>
+
+       
+      </Routes>
+     </main>
+      <Footer/>
     </div>
   );
 }
